@@ -180,7 +180,6 @@ class SortingPanel extends Component {
 				<div className="row shadow-sm justify-content-center pb-2">
 					<div className="col-md-3">
 						<div className="row justify-content-center">
-							<label>Array Size</label>
 							<input
 								className="custom-range"
 								name="numInArray"
@@ -190,9 +189,9 @@ class SortingPanel extends Component {
 								value={this.props.numInArray}
 								onChange={(e) => this.props.handleSetting(e)}
 							/>
+							<label>Array Size</label>
 						</div>
 						<div className="row justify-content-center">
-							<label>Animation Speed</label>
 							<input
 								className="custom-range"
 								name="speed"
@@ -202,6 +201,7 @@ class SortingPanel extends Component {
 								value={this.props.speed}
 								onChange={(e) => this.props.handleSetting(e)}
 							/>
+							<label>Animation Speed</label>
 						</div>
 						<div className="row justify-content-center">
 							<button
@@ -285,7 +285,7 @@ class SortingPanel extends Component {
 									value="quickSortFirst"
 									onClick={(e) => this.handleSort(e)}
 								>
-									Quick Sort(FirstIdx)
+									Quick Sort(First Index)
 								</button>
 								<button
 									type="button"
@@ -293,7 +293,7 @@ class SortingPanel extends Component {
 									value="quickSortLast"
 									onClick={(e) => this.handleSort(e)}
 								>
-									Quick Sort(LastIdx)
+									Quick Sort(Last Index)
 								</button>
 							</div>
 						</div>
